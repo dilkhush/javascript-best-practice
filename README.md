@@ -30,22 +30,27 @@ Examples:
 
 * Done use eval function in your code. The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it. Because it allows arbitrary code to be run, it also represents a security problem.
 * ignore if conditions for undefined checked. like
+
 Examples:
- function(a,b){
-   if(b === undefined)
-     y = 0;
- }
+  function(a,b){
+    if(b === undefined)
+      y = 0;
+  }
+  
 Always usee this:
- function(a,b){
-   y = y || 0;
- }
+  
+  function(a,b){
+    y = y || 0;
+  }
 
 * Beware that numbers can accidentally be converted to strings or NaN (Not a Number). JavaScript is loosely typed. A variable can contain different data types, and a variable can change its data type:
-Examples:
 
-var a = "hello";
-a = 10;
+Examples:
+  
+  var a = "hello";
+  a = 10;
 When doing mathematical operations, JavaScript can convert numbers to strings:
+
   var x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
   var x = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
   var x = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
@@ -58,5 +63,6 @@ When doing mathematical operations, JavaScript can convert numbers to strings:
 
 
 
-Contribute: 
+Contribute
+==========
 Please help me to write javascript best practice. :)
